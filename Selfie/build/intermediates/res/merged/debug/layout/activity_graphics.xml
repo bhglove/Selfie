@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.benjios.selfie.Graphics">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/photo_text"
+        android:id="@+id/photoText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/goldStar1"
+        android:src="@drawable/goldstar"
+        android:layout_alignTop="@+id/photoText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/gold_star"
+        android:focusable="true"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/goldStar2"
+        android:src="@drawable/goldstar"
+        android:layout_alignTop="@+id/photoText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/gold_star" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/photoView"
+        android:layout_above="@+id/imageTextButton"
+        android:src="#631919"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/goldStar1"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageText"
+        android:layout_marginBottom="27dp"
+        android:hint="@string/image_text"
+        android:layout_above="@+id/saveText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/saveText"
+        android:layout_alignEnd="@+id/saveText"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/image_button"
+        android:id="@+id/imageTextButton"
+        android:layout_alignTop="@+id/imageText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveText"
+        android:hint="@string/filename_text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filename_button"
+        android:id="@+id/saveButton"
+        android:layout_alignTop="@+id/saveText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/imageTextButton"
+        android:layout_alignStart="@+id/imageTextButton" />
+
+</RelativeLayout>
