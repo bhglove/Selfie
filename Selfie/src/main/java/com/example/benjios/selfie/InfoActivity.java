@@ -20,6 +20,8 @@ public class InfoActivity extends AppCompatActivity {
 
         TextView mInfoAck = (TextView) findViewById(R.id.infoAckText);
         mInfoAck.setLinksClickable(true);
+
+        //Assignment 2
     }
 
 }
